@@ -15,6 +15,7 @@
 <script>
 const marketingStyle=document.createElement('style');marketingStyle.textContent='.marketing{margin:0;padding:58px 7vw;background:#171715;display:flex;justify-content:center}.marketing img{display:block;width:min(100%,1680px);height:auto;border-radius:12px;box-shadow:0 22px 60px #0005}.marketing.light{background:#f2efe7}.marketing.purple{background:#25103f}.marketing img{width:min(100%,1680px)}@media(max-width:560px){.marketing{padding:34px 4vw}}';document.head.appendChild(marketingStyle);
 function addVisual(after,src,alt,classes=''){const target=document.querySelector(after);if(!target)return;const figure=document.createElement('figure');figure.className='marketing '+classes;const img=document.createElement('img');img.src=src;img.alt=alt;img.loading='lazy';figure.appendChild(img);target.insertAdjacentElement('afterend',figure)}
+const heroStyle=document.createElement('style');heroStyle.textContent='.hero-img{background-image:linear-gradient(180deg,transparent 52%,rgba(0,0,0,.82)),url("img/hero-precision-mold-premium.jpg")!important;background-position:center 54%!important;filter:saturate(.92) contrast(1.04)}';document.head.appendChild(heroStyle);
 addVisual('.strip','img/company-banner-english.png','Qijia factory scale and capability overview');
 addVisual('#services','img/service-features-english.png','Qijia service advantages','light');
 addVisual('#process','img/factory-introduction-english.png','English introduction to Qijia factory','light');
